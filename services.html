@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | CAR'S LOVER</title>
+  <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- online -->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+    <style>
+        body {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.955), rgb(249, 232, 49));
+            font-family: sans-serif;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .navbar a.nav-link {
+            color: white !important;
+            transition: 0.3s;
+        }
+
+        .navbar a.nav-link:hover,
+        .navbar a.active {
+            color: yellow !important;
+            text-shadow: 0 0 10px yellow;
+        }
+
+       
+
+        /* Services Info */
+        .services-section {
+            padding: 60px 15px;
+
+        }
+
+        .services-section h2 span {
+            color: yellow;
+        }
+
+        .services-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Car Cards */
+        .car-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid yellow;
+            border-radius: 10px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .car-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 20px yellow;
+        }
+
+        .car-card img {
+            border-radius: 8px 8px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .car-price {
+            color: yellow;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .btn-buy {
+            background-color: yellow;
+            border: none;
+            color: black;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-buy:hover {
+            background-color: black;
+            color: yellow;
+            border: 1px solid yellow;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            border-top: 2px solid yellow;
+            margin-top: 80px;
+        }
+
+        .footer-link {
+            color: #ddd;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .footer-link:hover {
+            color: yellow;
+            padding-left: 5px;
+        }
+
+        .social {
+            color: white;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        .social:hover {
+            color: yellow;
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .carousel-container {
+                width: 250px;
+            }
+
+            .carousel__face {
+                width: 240px;
+                height: 160px;
+            }
+
+            footer {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand pe-5 fw-bold" href="#"><i>CAR'S LOVER</i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav text-warning">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portofilo.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+
+    <!-- Services Intro -->
+    <section class="services-section text-center container mt-4">
+        <h2 class="fw-bold mb-3"  data-aos="fade-up"  data-aos-delay="50"><span>Our</span> Services</h2>
+        <p class="lead" data-aos="fade-up"  data-aos-delay="200">
+            At <span class="text-warning fw-bold"  >CAR'S LOVER</span>, we provide the ultimate platform for buying,
+            selling,
+            and showcasing luxury cars. From modern speed machines to timeless classics — we connect passion with
+            performance.
+        </p>
+    </section>
+
+    <!-- Car Cards -->
+    <section class="container pb-5">
+        <div class="row g-4 justify-content-center">
+
+            <!-- Car 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="car-card p-3">
+                    <img src="blue/bmw1.webp" class="w-100" alt="BMW">
+                    <h5 class="mt-3">BMW M4 Competition</h5>
+                    <p>Engine: 3.0L Twin-Turbo I6<br> Horsepower: 503 HP<br> Year: 2023</p>
+                    <p class="car-price">$72,000</p>
+                    <button class="btn btn-buy w-100">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="car-card p-3">
+                    <img src="blue/benze2.webp" class="w-100" alt="Mercedes">
+                    <h5 class="mt-3">Mercedes AMG GT</h5>
+                    <p>Engine: 4.0L V8 Biturbo<br> Horsepower: 577 HP<br> Year: 2024</p>
+                    <p class="car-price">$110,000</p>
+                    <button class="btn btn-buy w-100">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="car-card p-3">
+                    <img src="blue/334302-cars-amg-mercedes-benz.jpg" class="w-100" alt="AMG">
+                    <h5 class="mt-3">Mercedes S63 AMG</h5>
+                    <p>Engine: 4.0L V8 Hybrid<br> Horsepower: 791 HP<br> Year: 2023</p>
+                    <p class="car-price">$135,000</p><button class="btn btn-buy w-100">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Car 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="car-card p-3">
+                    <img src="blue/bmw4.jpg" class="w-100" alt="BMW">
+                    <h5 class="mt-3">BMW i8 Roadster</h5>
+                    <p>Engine: Hybrid Electric<br> Horsepower: 369 HP<br> Year: 2022</p>
+                    <p class="car-price">$89,000</p>
+                    <button class="btn btn-buy w-100">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- card6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="car-card p-3">
+                    <img src="blue/benze2.webp" class="w-100" alt="Mercedes">
+                    <h5 class="mt-3">Mercedes AMG GT</h5>
+                    <p>Engine: 4.0L V8 Biturbo<br> Horsepower: 577 HP<br> Year: 2024</p>
+                    <p class="car-price">$110,000</p>
+                    <button class="btn btn-buy w-100">Buy Now</button>
+                </div>
+            </div>
+
+              <!-- Car 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="car-card p-3">
+                    <img src="blue/bmw1.webp" class="w-100" alt="BMW">
+                    <h5 class="mt-3">BMW M4 Competition</h5>
+                    <p>Engine: 3.0L Twin-Turbo I6<br> Horsepower: 503 HP<br> Year: 2023</p>
+                    <p class="car-price">$72,000</p>
+                    <button class="btn btn-buy w-100">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="car-card p-3">
+                    <img src="blue/benze2.webp" class="w-100" alt="Mercedes">
+                    <h5 class="mt-3">Mercedes AMG GT</h5>
+                    <p>Engine: 4.0L V8 Biturbo<br> Horsepower: 577 HP<br> Year: 2024</p>
+                    <p class="car-price">$110,000</p>
+                    <button class="btn btn-buy w-100">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="car-card p-3">
+                    <img src="blue/334302-cars-amg-mercedes-benz.jpg" class="w-100" alt="AMG">
+                    <h5 class="mt-3">Mercedes S63 AMG</h5>
+                    <p>Engine: 4.0L V8 Hybrid<br> Horsepower: 791 HP<br> Year: 2023</p>
+                    <p class="car-price">$135,000</p><button class="btn btn-buy w-100">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Car 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="car-card p-3">
+                    <img src="blue/OIP.webp" class="w-100" alt="Lamborghini">
+                    <h5 class="mt-3">Lamborghini Huracán</h5>
+                    <p>Engine: 5.2L V10<br> Horsepower: 640 HP<br> Year: 2023</p>
+                    <p class="car-price">$210,000</p>
+                    <button class="btn btn-buy w-100">Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3 text-light">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-warning fw-bold mb-3"><i class="fas fa-car"></i> CAR'S LOVER</h5>
+                    <p class="small">
+                        Experience the thrill of luxury cars with CAR'S LOVER. Connecting buyers, sellers, and
+                        enthusiasts across Afghanistan.
+                    </p>
+                    <p class="text-warning small mt-2"><i class="fas fa-star"></i> Drive your dream, live your passion.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-warning mb-3">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="home.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-warning mb-3">Contact Info</h6>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Herat, Afghanistan</p>
+                    <p class="small mb-1"><i class="fas fa-phone me-2 text-warning"></i> +93 794 123 456</p>
+                    <p class="small"><i class="fas fa-envelope me-2 text-warning"></i> info@carslover.com</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center">
+                    <h6 class="text-warning mb-3">Follow Us</h6>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-warning my-4">
+            <div class="text-center small">
+                <p class="mb-0">&copy; 2025 <span class="text-warning fw-bold">CAR'S LOVER</span> | Designed with ❤️ for
+                    car lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

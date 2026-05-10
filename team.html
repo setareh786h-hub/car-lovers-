@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team | CAR'S LOVER</title>
+
+   <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- online -->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+  <style>
+    body {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgb(249, 232, 49));
+      
+      color: white;
+      font-family: sans-serif;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.85);
+    }
+
+    .navbar a.nav-link {
+      color: white !important;
+      transition: 0.3s;
+    }
+
+    .navbar a.nav-link:hover,
+    .navbar a.active {
+      color: yellow !important;
+      text-shadow: 0 0 10px yellow;
+    }
+
+    .team-section {
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    .team-card {
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 2px solid yellow;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .team-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px yellow;
+    }
+
+    .team-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .team-card-body {
+      padding: 20px;
+    }
+
+    .team-card-body h5 {
+      color: yellow;
+      font-weight: bold;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      border-top: 2px solid yellow;
+      margin-top: 80px;
+    }
+
+    .footer-link {
+      color: #ddd;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-link:hover {
+      color: yellow;
+      padding-left: 5px;
+    }
+
+    .social {
+      color: white;
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+
+    .social:hover {
+      color: yellow;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand pe-5 fw-bold" href="#"><i>CAR'S LOVER</i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav text-warning">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portofilo.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container" data-aos="fade-down">
+      <h2 class="fw-bold mb-4"><span style="color: yellow;">Our</span> Team</h2>
+      <p class="lead mb-5">Meet the passionate people behind CAR'S LOVER — driving innovation, style, and performance forward.</p>
+
+      <div class="row g-4">
+        <!-- Member 1 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-right">
+          <div class="team-card">
+            <img src="blue/ali.jpg" alt="Ali Ahmad">
+            <div class="team-card-body">
+              <h5>Ali Ahmad</h5>
+              <p>Founder & CEO</p>
+              <p><i class="far fa-clock text-warning"></i> Mon - Fri: 9 AM - 6 PM</p>
+              <a href="singleteam.html" class="btn btn-warning btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-right">
+          <div class="team-card">
+            <img src="blue/person6.webp" alt="Sara Rahimi">
+            <div class="team-card-body">
+              <h5>samer Rahimi</h5>
+              <p>Marketing Manager</p>
+              <p><i class="far fa-clock text-warning"></i> Mon - Sat: 8 AM - 5 PM</p>
+              <a href="singleteam.html" class="btn btn-warning btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-right">
+          <div class="team-card">
+            <img src="blue/person2.webp" alt="Omid Karimi">
+            <div class="team-card-body">
+              <h5>Omid Karimi</h5>
+              <p>Lead Designer</p>
+              <p><i class="far fa-clock text-warning"></i> Mon - Fri: 10 AM - 7 PM</p>
+              <a href="singleteam.html" class="btn btn-warning btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-right">
+          <div class="team-card">
+            <img src="blue/person1.webp" alt="Lina Noori">
+            <div class="team-card-body">
+              <h5>baran Noori</h5>
+              <p>Software Engineer</p>
+              <p><i class="far fa-clock text-warning"></i> Mon - Fri: 9 AM - 6 PM</p>
+              <a href="singleteam.html" class="btn btn-warning btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+           <!-- Member 1 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-right">
+          <div class="team-card">
+            <img src="blue/person7.jpg" alt="Ali Ahmad">
+            <div class="team-card-body">
+              <h5>Ali Ahmad</h5>
+              <p>Founder & CEO</p>
+              <p><i class="far fa-clock text-warning"></i> Mon - Fri: 9 AM - 6 PM</p>
+              <a href="singleteam.html" class="btn btn-warning btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-right">
+          <div class="team-card">
+            <img src="blue/person4.webp" alt="Sara Rahimi">
+            <div class="team-card-body">
+              <h5>Mostafa Rahimi</h5>
+              <p>Marketing Manager</p>
+              <p><i class="far fa-clock text-warning"></i> Mon - Sat: 8 AM - 5 PM</p>
+              <a href="singleteam.html" class="btn btn-warning btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-right">
+          <div class="team-card">
+            <img src="blue/person5.webp" alt="Omid Karimi">
+            <div class="team-card-body">
+              <h5> Arsalan seddiqi</h5>
+              <p>Lead Designer</p>
+              <p><i class="far fa-clock text-warning"></i> Mon - Fri: 10 AM - 7 PM</p>
+              <a href="singleteam.html" class="btn btn-warning btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-right">
+          <div class="team-card">
+            <img src="blue/person4.webp" alt="Lina Noori">
+            <div class="team-card-body">
+              <h5>Arash seddiqi </h5>
+              <p>Software Engineer</p>
+              <p><i class="far fa-clock text-warning"></i> Mon - Fri: 9 AM - 6 PM</p>
+              <a href="singleteam.html" class="btn btn-warning btn-sm">View Profile</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3 text-light">
+    <div class="container text-center small">
+      <hr class="border-warning my-4">
+      <p>&copy; 2025 <span class="text-warning fw-bold">CAR'S LOVER</span> | Designed for car enthusiasts.</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

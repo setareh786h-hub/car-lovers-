@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | CAR'S LOVER</title>
+
+  <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- online -->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgb(249, 232, 49));
+      font-family: sans-serif;
+      color: white;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.85);
+    }
+
+    .navbar a.nav-link {
+      color: white !important;
+      transition: 0.3s;
+    }
+
+    .navbar a.nav-link:hover,
+    .navbar a.active {
+      color: yellow !important;
+      text-shadow: 0 0 10px yellow;
+    }
+
+    /* Page Header */
+    .page-header {
+      padding: 120px 20px 40px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      color: yellow;
+      font-weight: bold;
+      font-size: 3rem;
+    }
+
+    .page-header p {
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    /* Pricing Cards */
+    .pricing-section {
+      padding: 60px 20px;
+    }
+
+    .pricing-card {
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 2px solid yellow;
+      border-radius: 15px;
+      padding: 30px 20px;
+      transition: 0.3s;
+    }
+
+    .pricing-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px yellow;
+    }
+
+    .pricing-card h5 {
+      color: yellow;
+      font-weight: bold;
+    }
+
+    .pricing-card p {
+      color: #ddd;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+      color: yellow;
+    }
+
+    .feature-list li {
+      margin: 10px 0;
+    }
+
+    .feature-list li i {
+      color: yellow;
+      margin-right: 10px;
+    }
+
+    .btn-custom {
+      background-color: yellow;
+      color: black;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: white;
+      color: black;
+    }
+
+    /* Table */
+    .table-container {
+      overflow-x: auto;
+      margin-top: 40px;
+    }
+
+    table {
+      color: white;
+      border: 2px solid yellow;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 12px;
+    }
+
+    th {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: 2px solid yellow;
+    }
+
+    td {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .table-bordered{
+      border: 2px solid yellow;
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      border-top: 2px solid yellow;
+      margin-top: 80px;
+    }
+
+    .footer-link {
+      color: #ddd;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-link:hover {
+      color: yellow;
+      padding-left: 5px;
+    }
+
+    .social {
+      color: white;
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+
+    .social:hover {
+      color: yellow;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand pe-5 fw-bold" href="#"><i>CAR'S LOVER</i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav text-warning">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portofilo.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header" data-aos="fade-down">
+    <h1>Pricing Plans</h1>
+    <p>Choose the perfect car plan according to your budget and needs. Luxury, comfort, and performance guaranteed.</p>
+  </div>
+
+  <!-- Pricing Cards Section -->
+  <section class="pricing-section text-center">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Basic Plan -->
+        <div class="col-lg-4 col-md-6" data-aos="flip-right">
+          <div class="pricing-card">
+            <h5>Basic</h5>
+            <p>Perfect for beginners and casual car lovers.</p>
+            <p class="price">$25,000</p>
+            <ul class="list-unstyled feature-list text-start">
+              <li><i class="fas fa-check"></i>Standard Engine</li>
+              <li><i class="fas fa-check"></i>Basic Interior</li>
+              <li><i class="fas fa-check"></i>Manual Transmission</li>
+              <li><i class="fas fa-check"></i>Limited Warranty</li>
+            </ul>
+            <button class="btn btn-custom mt-3">Buy Now</button>
+          </div>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="col-lg-4 col-md-6" data-aos="flip-right">
+          <div class="pricing-card">
+            <h5>Premium</h5>
+            <p>Advanced features and enhanced comfort.</p>
+            <p class="price">$45,000</p>
+            <ul class="list-unstyled feature-list text-start">
+              <li><i class="fas fa-check"></i>Advanced Engine</li>
+              <li><i class="fas fa-check"></i>Leather Interior</li>
+              <li><i class="fas fa-check"></i>Automatic Transmission</li>
+              <li><i class="fas fa-check"></i>Extended Warranty</li>
+              <li><i class="fas fa-check"></i>Navigation System</li>
+            </ul>
+            <button class="btn btn-custom mt-3">Buy Now</button>
+          </div>
+        </div>
+
+        <!-- VIP Plan -->
+        <div class="col-lg-4 col-md-6" data-aos="flip-right">
+          <div class="pricing-card">
+            <h5>VIP</h5>
+            <p>Ultimate luxury and performance for car enthusiasts.</p>
+            <p class="price">$75,000</p>
+            <ul class="list-unstyled feature-list text-start">
+              <li><i class="fas fa-check"></i>Supercharged Engine</li>
+              <li><i class="fas fa-check"></i>Premium Leather Interior</li>
+              <li><i class="fas fa-check"></i>Automatic Transmission</li>
+              <li><i class="fas fa-check"></i>Full Warranty</li>
+              <li><i class="fas fa-check"></i>Advanced Safety & Tech</li>
+              <li><i class="fas fa-check"></i>Custom Paint Options</li>
+            </ul>
+            <button class="btn btn-custom mt-3">Buy Now</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Detailed Price Table -->
+      <div class="table-container mt-5">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Car Model</th>
+              <th>Engine</th>
+              <th>Transmission</th>
+              <th>Interior</th>
+              <th>Price</th>
+              <th>Discount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BMW i8</td>
+              <td>Hybrid 1.5L</td>
+              <td>Automatic</td>
+              <td>Leather</td>
+              <td>$60,000</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <td>Lamborghini Huracán</td>
+              <td>V10 5.2L</td>
+              <td>Automatic</td>
+              <td>Premium Leather</td>
+              <td>$250,000</td>
+              <td>2%</td>
+            </tr>
+            <tr>
+              <td>Mercedes AMG GT</td>
+              <td>V8 4.0L</td>
+              <td>Automatic</td>
+              <td>Luxury Leather</td>
+              <td>$120,000</td>
+              <td>3%</td>
+            </tr>
+            <tr>
+              <td>BMW M4</td>
+              <td>Inline-6 3.0L</td>
+              <td>Automatic</td>
+              <td>BMW M4</td>
+              <td>Inline-6 3.0L</td>
+              <td>Automatic</td>
+              <td>Leather</td>
+              <td>$75,000</td>
+              <td>4%</td>
+            </tr>
+            <tr>
+              <td>Audi R8</td>
+              <td>V10 5.2L</td>
+              <td>Automatic</td>
+              <td>Premium Leather</td>
+              <td>$180,000</td>
+              <td>3%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-light py-4">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 CAR'S LOVER. All Rights Reserved.</p>
+      <div class="mb-2">
+        <a href="#" class="social me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div>
+        <a href="home.html" class="footer-link me-3">Home</a>
+        <a href="about.html" class="footer-link me-3">About</a>
+        <a href="services.html" class="footer-link me-3">Services</a>
+        <a href="portofilo.html" class="footer-link me-3">Portfolio</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

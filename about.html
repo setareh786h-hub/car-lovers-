@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | CAR'S LOVER</title>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- online -->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.955), rgb(249, 232, 49));
+      font-family: sans-serif;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar a.nav-link {
+      color: white !important;
+      transition: 0.3s;
+    }
+
+    .navbar a.nav-link:hover,
+    .navbar a.active {
+      color: yellow !important;
+      text-shadow: 0 0 10px yellow;
+    }
+
+    /* 3D Carousel */
+    .carousel-container {
+      position: relative;
+      width: 320px;
+      margin: 120px auto 40px auto;
+      perspective: 1000px;
+    }
+
+    .carousel {
+      position: absolute;
+      width: 100%;
+      height: 220px;
+      transform-style: preserve-3d;
+      animation: rotate360 20s infinite linear;
+    }
+
+    .carousel__face {
+      position: relative;
+      width: 300px;
+      height: 200px;
+
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    @keyframes rotate360 {
+      from {
+        transform: rotateY(0deg);
+      }
+
+      to {
+        transform: rotateY(-360deg);
+      }
+    }
+
+
+    /* About Content */
+    .about-section {
+      padding: 60px 15px;
+    }
+
+    .about-section h2 span {
+      color: yellow;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .highlight {
+      color: yellow;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      border-top: 2px solid yellow;
+      margin-top: 80px;
+    }
+
+    .footer-link {
+      color: #ddd;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-link:hover {
+      color: yellow;
+      padding-left: 5px;
+    }
+
+    .social {
+      color: white;
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+
+    .social:hover {
+      color: yellow;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .carousel-container {
+        width: 250px;
+      }
+
+      .carousel__face {
+        width: 240px;
+        height: 160px;
+      }
+
+      .about-section {
+        text-align: center;
+      }
+
+      footer {
+        text-align: center;
+      }
+    }
+
+
+
+
+    /* 🌟 انیمیشن‌ها */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+
+      60% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .fade-in-delay {
+      animation: fadeIn 1.3s ease forwards;
+      animation-delay: 0.4s;
+    }
+
+    .bounce-in {
+      animation: bounceIn 1.4s ease-out forwards;
+      animation-delay: 0.8s;
+    }
+
+
+    /* slid */
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand pe-5 fw-bold" href="#"><i>CAR'S LOVER</i> <i class="fas fa-car"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav text-warning">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portofilo.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- About Section -->
+  <section class="about-section container mt-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 " data-aos="fade-up" data-aos-delay="50">
+        <h2 class="fw-bold mb-3"><span>About</span> Our Exhibition</h2>
+        <p>
+          Welcome to <span class="highlight">CAR’S LOVER</span> — Afghanistan’s premier luxury and sports car
+          exhibition.
+          Since our founding, we’ve been passionate about bringing together the world’s finest automotive designs under
+          one roof.
+        </p>
+        <p>
+          Our annual event showcases <span class="highlight">exclusive brands</span> like BMW, Mercedes-Benz, Ferrari,
+          and Lamborghini,
+          connecting car enthusiasts, collectors, and manufacturers in a dynamic experience filled with power, speed,
+          and elegance.
+        </p>
+        <p>
+          Whether you’re a casual admirer or a true motorhead, <span class="highlight">CAR’S LOVER</span> offers an
+          unforgettable
+          opportunity to explore the innovation and art of the automotive world.
+        </p>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <img src="blue/benze2.webp" alt="Exhibition" class="img-fluid rounded shadow-lg"
+          style="border: 3px solid yellow;">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- slider -->
+
+
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3 text-light">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="text-warning fw-bold mb-3"><i class="fas fa-car"></i> CAR'S LOVER</h5>
+          <p class="small">
+            A community built around passion for automobiles. From classic icons to the latest supercars —
+            we bring the thrill of motion to life.
+          </p>
+          <p class="text-warning small mt-2"><i class="fas fa-star"></i> Drive your dream, live your passion.</p>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-warning mb-3">Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li><a href="home.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-warning mb-3">Contact Info</h6>
+          <p class="small mb-1"><i class="fas fa-map-marker-alt me-2 text-warning"></i> Herat, Afghanistan</p>
+          <p class="small mb-1"><i class="fas fa-phone me-2 text-warning"></i> +93 794 123 456</p>
+          <p class="small"><i class="fas fa-envelope me-2 text-warning"></i> info@carslover.com</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center">
+          <h6 class="text-warning mb-3">Follow Us</h6>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-warning my-4">
+      <div class="text-center small">
+        <p class="mb-0">&copy; 2025 <span class="text-warning fw-bold">CAR'S LOVER</span> | Designed with ❤️ for car
+          enthusiasts.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
+
+</body>
+
+</html>

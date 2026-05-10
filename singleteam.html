@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Member | CAR'S LOVER</title>
+  <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- online -->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgb(249, 232, 49));
+      color: white;
+      font-family: sans-serif;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.85);
+    }
+
+    .navbar a.nav-link {
+      color: white !important;
+      transition: 0.3s;
+    }
+
+    .navbar a.nav-link:hover,
+    .navbar a.active {
+      color: yellow !important;
+      text-shadow: 0 0 10px yellow;
+    }
+
+    .profile-section {
+      padding: 120px 20px 60px;
+    }
+
+    .profile-card {
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 2px solid yellow;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 20px yellow;
+    }
+
+    .profile-card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-bottom: 2px solid yellow;
+    }
+
+    .profile-body {
+      padding: 25px;
+    }
+
+    .profile-body h3 {
+      color: yellow;
+    }
+
+    .badge-skill {
+      background: yellow;
+      color: black;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      border-top: 2px solid yellow;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ 
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand pe-5 fw-bold" href="#"><i>CAR'S LOVER</i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav text-warning">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portofilo.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section class="profile-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="profile-card">
+            <img src="blue/ali.jpg" alt="Ali Ahmad">
+            <div class="profile-body text-center">
+              <h3>Ali Ahmad</h3>
+              <p class="text-warning">Founder & CEO</p>
+              <p>Ali Ahmad is the visionary founder of CAR'S LOVER, leading innovation in automotive design and technology. With over 10 years of experience in luxury car marketing, he has shaped the company into a trusted brand for car enthusiasts worldwide.</p>
+
+              <h5 class="mt-4">Skills</h5>
+              <span class="badge badge-skill">Leadership</span>
+              <span class="badge badge-skill">Marketing</span>
+              <span class="badge badge-skill">Business Strategy</span>
+
+              <h5 class="mt-4">Working Hours</h5>
+              <p><i class="far fa-clock text-warning"></i> Monday - Friday | 9:00 AM - 6:00 PM</p>
+
+              <h5 class="mt-4">Contact</h5>
+              <p><i class="fas fa-envelope text-warning"></i> ali@carslover.com</p>
+              <p><i class="fas fa-phone text-warning"></i> +93 700 123 456</p>
+
+              <a href="team.html" class="btn btn-warning mt-3">Back to Team</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-4 pb-3 text-light text-center">
+    <hr class="border-warning my-4">
+    <p>&copy; 2025 <span class="text-warning fw-bold">CAR'S LOVER</span> | Designed for car enthusiasts.</p>
+  </footer>
+
+</body>
+</html>

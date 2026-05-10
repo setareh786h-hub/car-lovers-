@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Portfolio | CAR'S LOVER</title>
+  <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- online -->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+  <style>
+    body {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgb(249, 232, 49));
+      font-family: sans-serif;
+      color: white;
+      overflow-x: hidden;
+    }
+ /* Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar a.nav-link {
+      color: white !important;
+      transition: 0.3s;
+    }
+
+    .navbar a.nav-link:hover,
+    .navbar a.active {
+      color: yellow !important;
+      text-shadow: 0 0 10px yellow;
+    }
+
+    /* 3D Carousel */
+    .carousel-container {
+      position: relative;
+      width: 320px;
+      margin: 120px auto 40px auto;
+      perspective: 1000px;
+    }
+
+    .carousel {
+      position: absolute;
+      width: 100%;
+      height: 220px;
+      transform-style: preserve-3d;
+      animation: rotate360 20s infinite linear;
+    }
+
+    .carousel__face {
+      position: relative;
+      width: 300px;
+      height: 200px;
+
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    @keyframes rotate360 {
+      from {
+        transform: rotateY(0deg);
+      }
+
+      to {
+        transform: rotateY(-360deg);
+      }
+    }
+    .car-section {
+      padding: 80px 0;
+      border-bottom: 2px solid yellow;
+    }
+
+    .car-img {
+      width: 100%;
+      border-radius: 10px;
+      border: 3px solid yellow;
+      box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+    }
+
+    .car-details h2 {
+      color: yellow;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .spec-table {
+      margin-top: 20px;
+      color: white;
+    }
+
+    .spec-table th {
+      background-color: yellow;
+      color: black;
+      text-align: center;
+    }
+
+    .btn-back {
+      background-color: yellow;
+      color: black;
+      border: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-back:hover {
+      background-color: black;
+      color: yellow;
+      border: 2px solid yellow;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.9);
+      border-top: 2px solid yellow;
+      margin-top: 60px;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+   <nav class="navbar fixed-top navbar-expand-sm navbar-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand pe-5 fw-bold" href="#"><i>CAR'S LOVER</i> <i class="fas fa-car"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav text-warning">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portofilo.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Car Sections -->
+  <div class="container" style="margin-top:100px;">
+
+    <!-- BMW i8 -->
+    <section class="car-section">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="blue/bmw4.jpg" alt="BMW i8" class="car-img">
+        </div>
+        <div class="col-md-6 car-details">
+          <h2>BMW i8 Roadster</h2>
+          <p>
+            The BMW i8 Roadster combines hybrid power and futuristic design.  
+            It’s a masterpiece of performance and sustainability.
+          </p>
+          <table class="table table-bordered spec-table">
+            <tr><th>Specification</th><th>Details</th></tr>
+            <tr><td>Engine</td><td>1.5L Turbo + Electric</td></tr>
+            <tr><td>Power</td><td>369 HP</td></tr>
+            <tr><td>Top Speed</td><td>250 km/h</td></tr>
+            <tr><td>Fuel Type</td><td>Hybrid</td></tr>
+            <tr><td>0–100 km/h</td><td>4.4 sec</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lamborghini Huracán -->
+    <section class="car-section">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 order-md-2">
+          <img src="blue/lamborginy.webp" alt="Lamborghini" class="car-img">
+        </div>
+        <div class="col-md-6 car-details order-md-1">
+          <h2>Lamborghini Huracán EVO</h2>
+          <p>
+            The Huracán EVO blends Italian design with raw power.  
+            A V10 engine that defines the supercar experience.
+          </p>
+          <table class="table table-bordered spec-table">
+            <tr><th>Specification</th><th>Details</th></tr>
+            <tr><td>Engine</td><td>5.2L V10</td></tr>
+            <tr><td>Power</td><td>640 HP</td></tr>
+            <tr><td>Top Speed</td><td>325 km/h</td></tr>
+            <tr><td>Fuel Type</td><td>Petrol</td></tr>
+            <tr><td>0–100 km/h</td><td>2.9 sec</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mercedes AMG GT -->
+    <section class="car-section">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="blue/benze2.webp" alt="Mercedes AMG GT" class="car-img">
+        </div>
+        <div class="col-md-6 car-details">
+          <h2>Mercedes AMG GT</h2>
+          <p>
+            A sports coupe that perfectly merges power, elegance, and German precision.  
+            The AMG GT defines performance.
+          </p>
+          <table class="table table-bordered spec-table">
+            <tr><th>Specification</th><th>Details</th></tr>
+            <tr><td>Engine</td><td>4.0L Twin-Turbo V8</td></tr>
+            <tr><td>Power</td><td>523 HP</td></tr>
+            <tr><td>Top Speed</td><td>304 km/h</td></tr>
+            <tr><td>Fuel Type</td><td>Petrol</td></tr>
+            <tr><td>0–100 km/h</td><td>3.7 sec</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mercedes S63 AMG -->
+    <section class="car-section">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 order-md-2">
+          <img src="blue/334302-cars-amg-mercedes-benz.jpg" alt="Mercedes S63 AMG" class="car-img">
+        </div>
+        <div class="col-md-6 car-details order-md-1">
+          <h2>Mercedes S63 AMG</h2>
+          <p>
+            Where luxury meets power — the S63 AMG delivers an unmatched driving experience.
+          </p>
+          <table class="table table-bordered spec-table">
+            <tr><th>Specification</th><th>Details</th></tr>
+            <tr><td>Engine</td><td>4.0L V8 Biturbo</td></tr>
+            <tr><td>Power</td><td>603 HP</td></tr>
+            <tr><td>Top Speed</td><td>250 km/h (limited)</td></tr>
+            <tr><td>Fuel Type</td><td>Petrol</td></tr>
+            <tr><td>0–100 km/h</td><td>3.5 sec</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- BMW M4 -->
+    <section class="car-section">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="blue/bmw1.webp" alt="BMW M4" class="car-img">
+        </div>
+        <div class="col-md-6 car-details">
+          <h2>BMW M4 Competition</h2>
+          <p>
+            Precision handling and raw performance come together in the M4 Competition.
+          </p>
+          <table class="table table-bordered spec-table">
+            <tr><th>Specification</th><th>Details</th></tr>
+            <tr><td>Engine</td><td>3.0L Twin-Turbo I6</td></tr>
+            <tr><td>Power</td><td>510 HP</td></tr>
+            <tr><td>Top Speed</td><td>290 km/h</td></tr>
+            <tr><td>Fuel Type</td><td>Petrol</td></tr>
+            <tr><td>0–100 km/h</td><td>3.9 sec</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back Button -->
+    <div class="text-center mt-4">
+      <a href="portofilo.html" class="btn btn-back"><i class="fas fa-arrow-left me-2"></i>Back to Portfolio</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p class="mb-0">&copy; 2025 <span class="text-warning fw-bold">CAR'S LOVER</span> | Designed for car enthusiasts.</p>
+  </footer>
+
+</body>
+</html>
